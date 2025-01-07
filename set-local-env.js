@@ -18,7 +18,10 @@ async function isAdmin() {
     }
 }
 
-
+// AWS SDK設定
+const secretsManager = new AWS.SecretsManager({
+    region: 'ap-northeast-1'
+});
 
 async function setWindowsEnvVar(key, value) {
     try {

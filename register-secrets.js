@@ -2,9 +2,9 @@
  * AWS Secrets Managerに環境変数を登録するスクリプト
  */
 
-const fs = require('fs');
-const dotenv = require('dotenv');
-const AWS = require('aws-sdk');
+import fs from 'fs';
+import dotenv from 'dotenv';
+import AWS from 'aws-sdk';
 
 // ハードコードされた認証情報を削除し、デフォルトの認証情報プロバイダーチェーンを使用
 const secretsManager = new AWS.SecretsManager({

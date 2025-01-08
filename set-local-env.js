@@ -3,9 +3,9 @@
  * Windowsのシステム環境変数として設定するスクリプト
  */
 
-const AWS = require('aws-sdk');
-const { exec } = require('child_process');
-const util = require('util');
+import AWS from 'aws-sdk';
+import { exec } from 'child_process';
+import util from 'util';
 const execPromise = util.promisify(exec);
 
 // 管理者権限チェック
